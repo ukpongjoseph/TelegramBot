@@ -29,7 +29,8 @@ const Quiz = async (msg) => {
     bot.sendMessage(chatId, "Are you ready for a dev quiz ?", {
         reply_markup : {
             inline_keyboard : [
-                [{text : "Start Quiz", callback_data : "start quiz"}]
+                [{text : "Start Quiz", callback_data : "start quiz"}],
+                [{text : "Cancel Quiz", callback_data : "bye"}]
             ]
         }
     })

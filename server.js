@@ -2,6 +2,7 @@ const bot = require("./botConfig")
 // logging to the console for testing
 console.log("Welcome")
 const {start, Quiz, displayPicture, fetchProfilePicture} = require("./botServices/botServices")
+// const {getAIResponse} = require("./openAIServices/openAI")
 
 // adding event listener to listen for messages. When the bot recieves a message, the callback function is triggered
 bot.on('message', start)
